@@ -1,0 +1,56 @@
+name: frontend
+description: Aplicación para ver artículos y gestionar favoritos
+
+# La versión y el corrector del número de compilación.
+# A diferencia de la versión, el corrector de números de compilación puede ser controlado por flutter build.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI
+  cupertino_icons: ^1.0.2
+  flutter_rating_bar: ^4.0.1
+  cached_network_image: ^3.2.3
+  
+  # Estado
+  provider: ^6.0.5
+  
+  # Almacenamiento
+  shared_preferences: ^2.1.1
+  sqflite: ^2.2.8+4
+  path: ^1.8.3
+  
+  # Networking
+  http: ^0.13.6
+  
+  # Autenticación
+  jwt_decoder: ^2.0.1
+  
+  # Utilidades
+  intl: ^0.18.1
+  flutter_secure_storage: ^8.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # Assets
+  assets:
+    - assets/images/
+
+  # Fuentes
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
