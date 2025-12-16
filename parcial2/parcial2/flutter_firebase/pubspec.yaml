@@ -1,0 +1,31 @@
+name: flutter_firebase
+description: Aplicación de mensajería con notificaciones push.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  firebase_core: ^2.15.1
+  firebase_messaging: ^14.6.7
+  http: ^1.1.0
+  shared_preferences: ^2.2.0
+  image_picker: ^1.0.4
+  provider: ^6.0.5
+  intl: ^0.18.1
+  path: ^1.8.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.2
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
